@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Técnico, Montagem de PC & Desenvolvimento | Soluções GO-TI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Soluções <span>GO-TI</span></div>
+    </header>
+
+    <section class="hero">
+        <!-- Canvas para a animação do circuito elétrico -->
+        <canvas id="circuitCanvas"></canvas>
+
+        <div class="hero-content">
+            <div class="human-badge">
+                💬 Fale diretamente pelo WhatsApp, nada de robôs: posso te ajudar a resolver seu problema!
+            </div>
+            <h1>Montagem de PCs, Suporte Remoto e Desenvolvimento</h1>
+            <p>Setups sob medida para jogos e design gráfico, suporte remoto, otimização de sistemas e criação de sites e planilhas inteligentes.</p>
+            
+            <a href="https://wa.me/5519995663758?text=Ol%C3%A1%20Gabriel!%20Gostaria%20de%20falar%20diretamente%20com%20voc%C3%AA%20para%20solicitar%20um%20or%C3%A7amento%20de%20montagem%20de%20PC%2C%20suporte%20t%C3%A9cnico%20ou%20outros%20servi%C3%A7os." class="btn btn-whatsapp" target="_blank">
+                WhatsApp Gabriel Oliveira 📱
+            </a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Serviços Prestados</h2>
+        <div class="grid">
+          <div class="card">
+    <span class="icon">
+        <img src="img/img_pc.jpg" alt="Gabinete Gamer RGB" class="card-icon-img">
+    </span>
+    <h3>Montagem e Consultoria de PCs</h3>
+    <p>Montagem de computadores sob medida para jogos (PC Gamer) ou estações de trabalho de alta performance para designers gráficos, com seleção das melhores peças e foco no melhor custo-benefício.</p>
+</div>
+
+            <!-- Card com Download e Guia do TeamViewer -->
+           <div class="card">
+    <span class="icon">
+        <img src="img/img_suporte.jpg" alt="Instalação e Suporte Remoto" class="card-icon-img">
+    </span>
+                <h3>Instalação de Sistemas & Suporte Remoto</h3>
+                <p>Suporte remoto especializado para instalação, restauração e configuração de sistemas operacionais e softwares essenciais.</p>
+                
+                <div class="tv-guide">
+                    <h4>Como liberar o acesso remoto:</h4>
+                    <ol class="tv-steps">
+                        <li>Baixe o programa no botão abaixo.</li>
+                        <li>Execute o arquivo e selecione <strong>"Instalação Padrão"</strong>.</li>
+                        <li>Abra o TeamViewer e me envie a <strong>Sua ID</strong> e a <strong>Senha</strong> pelo WhatsApp.</li>
+                    </ol>
+                    <a href="https://www.teamviewer.com/pt-br/download/windows/" target="_blank" rel="noopener noreferrer" class="btn-download">
+                        📥 Baixar TeamViewer Oficial
+                    </a>
+                </div>
+            </div>
+
+           <!-- Card Pacote Office (Abre o Modal) -->
+<div class="card">
+    <span class="icon">
+        <img src="img/img_office.jpg" alt="Pacote Office" class="card-icon-img">
+    </span>
+    <h3>Pacote Office</h3>
+    <p>Instalação e apoio técnico no pacote completo (Word, Excel, PowerPoint, Outlook) para uso corporativo ou pessoal.</p>
+    <button type="button" class="btn-download" id="btnOpenOfficeModal">
+        📁 Acessar Office
+    </button>
+</div>
+
+           <!-- Card: Otimização de Desempenho -->
+<!-- Card: Otimização de Desempenho -->
+<div class="card">
+    <span class="icon">
+        <img src="img/img_otimizacao.jpg" alt="Otimização de Desempenho" class="card-icon-img">
+    </span>
+    <h3>Otimização de Desempenho</h3>
+    <p>Limpeza de sistema, remoção de arquivos desnecessários e ajustes para acelerar a velocidade do seu computador.</p>
+    <a href="https://www.ccleaner.com/pt-br/ccleaner/download/standard" target="_blank" rel="noopener noreferrer" class="btn-download">
+        📥 Baixar CCleaner
+    </a>
+</div>
+           <div class="card">
+    <span class="icon">
+        <img src="img/img_site.jpg" alt="Criação de Sites" class="card-icon-img">
+    </span>
+    <h3>Criação de Sites</h3>
+    <p>Desenvolvimento de landing pages, portfólios e sites institucionais modernos, responsivos e otimizados.</p>
+</div>
+            <div class="card">
+    <span class="icon">
+        <img src="img/img_planilhas.jpg" alt="Desenvolvimento de Planilhas" class="card-icon-img">
+    </span>
+    <h3>Desenvolvimento de Planilhas</h3>
+    <p>Criação de planilhas personalizadas em Excel, automações, dashboards dinâmicos e controle financeiro ou de estoque para o seu negócio.</p>
+</div>
+        </div>
+    </section>
+
+    <!-- Popup/Modal de Aceite dos Termos do Office -->
+    <div id="officeModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="btnCloseOfficeModal">&times;</span>
+            <h3>Termos para Download e Instalação</h3>
+            <p>Antes de prosseguir para o Google Drive, confirme que está ciente das condições abaixo:</p>
+            
+            <div class="modal-terms">
+                <ul>
+                    <li>Este arquivo destina-se ao uso em suporte técnico ou instalação assistida.</li>
+                    <li>Certifique-se de possuir a licença apropriada para a ativação do produto.</li>
+                    <li>Caso necessite de suporte para a instalação, entre em contato diretamente via WhatsApp.</li>
+                </ul>
+            </div>
+
+            <label class="modal-checkbox-label">
+                <input type="checkbox" id="chkAcceptTerms">
+                <span>Li e concordo com as condições para realizar o download.</span>
+            </label>
+
+            <div class="modal-actions">
+                <a href="https://drive.google.com/file/d/1wpoV06ELHAgn4cNKL5yX2HYCsMj2b9Ra/view?usp=drive_link" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   id="btnConfirmDownload" 
+                   class="btn-download btn-disabled">
+                    📥 Ir para o Google Drive
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>Atendimento Pessoal e Sem Burocracia</h2>
+        <div class="contact-info">
+            <p><strong>Endereço:</strong> Condomínio Vila Romana - Limeira, SP</p>
+            <p>Atendimento presencial em Limeira e suporte remoto para todo o Brasil.</p>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Soluções GO-TI. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
